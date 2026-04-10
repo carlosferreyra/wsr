@@ -2,45 +2,45 @@
 
 ## 1. Project structure
 
-- [ ] Create `src/lib.rs` and declare all top-level modules
-- [ ] Create `src/cli/mod.rs`
-- [ ] Create `src/config/mod.rs`
-- [ ] Create `src/provider/mod.rs`
-- [ ] Create `src/sandbox/mod.rs`
-- [ ] Create `src/sync/mod.rs`
-- [ ] Create `src/engine/mod.rs`
+- [x] Create `src/lib.rs` and declare all top-level modules
+- [x] Create `src/cli/mod.rs`
+- [x] Create `src/config/mod.rs`
+- [x] Create `src/provider/mod.rs`
+- [x] Create `src/sandbox/mod.rs`
+- [x] Create `src/sync/mod.rs`
+- [x] Create `src/engine/mod.rs`
 
 ## 2. CLI skeleton
 
-- [ ] Add `clap` dependency with `derive` feature
-- [ ] `wsr init` subcommand
-- [ ] `wsr run` subcommand
-  - [ ] `--event <n>` flag
-  - [ ] `--dry-run` flag
-  - [ ] `--verbose` flag
-  - [ ] `--yes` flag
-  - [ ] optional `<file>` positional argument
-- [ ] Wire subcommands into `main.rs`
+- [x] Add `clap` dependency with `derive` feature
+- [x] `wsr init` subcommand
+- [x] `wsr run` subcommand
+  - [x] `--event <n>` flag
+  - [x] `--dry-run` flag
+  - [x] `--verbose` flag
+  - [x] `--yes` flag
+  - [x] optional `<file>` positional argument
+- [x] Wire subcommands into `main.rs`
 
 ## 3. wsr.json config
 
-- [ ] Add `serde`, `serde_json` dependencies
-- [ ] `Config` struct with `provider`, `sandbox` fields
-- [ ] `SandboxConfig` struct with `allowed_hosts`, `secrets_from` fields
-- [ ] `Config::load()` — read and parse `wsr.json` from repo root
-- [ ] `Config::generate()` — write default `wsr.json` with `$schema`
-- [ ] JSON Schema URL hardcoded as `https://wsr.dev/schema/wsr.json`
+- [x] Add `serde`, `serde_json` dependencies
+- [x] `Config` struct with `provider`, `sandbox` fields
+- [x] `SandboxConfig` struct with `allowed_hosts`, `secrets_from` fields
+- [x] `Config::load()` — read and parse `wsr.json` from repo root
+- [x] `Config::generate()` — write default `wsr.json` with `$schema`
+- [x] JSON Schema URL hardcoded as `https://wsr.dev/schema/wsr.json`
 
 ## 4. GitHub Actions YAML parser
 
-- [ ] Add `serde-yaml`, `schemars` dependencies
-- [ ] `Workflow` struct — `name`, `on`, `jobs`
-- [ ] `Trigger` enum — `push`, `pull_request`, `workflow_dispatch`, tag patterns
-- [ ] `Job` struct — `runs-on`, `needs`, `steps`, `outputs`, `env`, `if`, `strategy`
-- [ ] `Step` struct — `name`, `run`, `uses`, `with`, `env`, `if`, `continue-on-error`,
+- [x] Add `serde-yaml`, `schemars` dependencies
+- [x] `Workflow` struct — `name`, `on`, `jobs`
+- [x] `Trigger` enum — `push`, `pull_request`, `workflow_dispatch`, tag patterns
+- [x] `Job` struct — `runs-on`, `needs`, `steps`, `outputs`, `env`, `if`, `strategy`
+- [x] `Step` struct — `name`, `run`, `uses`, `with`, `env`, `if`, `continue-on-error`,
       `working-directory`
-- [ ] `Matrix` struct — basic `include`/`exclude`
-- [ ] `WorkflowParser::parse(path)` — deserialize a workflow file
+- [x] `Matrix` struct — basic `include`/`exclude`
+- [x] `WorkflowParser::parse(path)` — deserialize a workflow file
 
 ## 5. Expression engine
 
