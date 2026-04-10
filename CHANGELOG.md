@@ -12,3 +12,4 @@
 - Add MIT license
 - Add package metadata (description, license) to Cargo.toml
 - Add git-cliff and cargo-release config with CHANGELOG
+- Fix pre-release hook to stage CHANGELOG.md before release commit
