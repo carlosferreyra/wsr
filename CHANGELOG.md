@@ -3,6 +3,7 @@
 ### 📚 Documentation
 
 - Add CONTRIBUTING, SECURITY, CODE_OF_CONDUCT and author metadata
+- Reformat CODE_OF_CONDUCT to 100 char line width
 
 ### ⚙️ Miscellaneous Tasks
 
