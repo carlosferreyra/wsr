@@ -1,11 +1,12 @@
 [package]
-name = "wsr"
-version = "0.1.0"
-edition = "2024"
+  name       = "wsr"
+  version    = "0.1.0"
+  edition    = "2024"
+  repository = "https://github.com/carlosferreyra/wsr"
 
 [dependencies]
 
 # The profile that 'dist' will build with
 [profile.dist]
-inherits = "release"
-lto = "thin"
+  inherits = "release"
+  lto      = "thin"
