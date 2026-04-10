@@ -1,3 +1,19 @@
+## [0.0.2] - 2026-04-10
+
+### 🚀 Features
+
+- Scaffold module structure
+- *(cli)* Add wsr init and wsr run subcommands with clap
+
+### 🐛 Bug Fixes
+
+- *(ci)* Remove aarch64-pc-windows-msvc from dist targets
+
+### 📚 Documentation
+
+- Add v0.1 implementation checklist
+- Add docs/ directory mirroring src module structure
+- Reformat docs index table alignment
 ## [0.0.1] - 2026-04-10
 
 ### 📚 Documentation
