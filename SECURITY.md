@@ -1,0 +1,16 @@
+# Security Policy
+
+## Reporting a vulnerability
+
+Please **do not** open a public GitHub issue for security vulnerabilities.
+
+Instead, report them privately by emailing:
+
+**eduferreyraok@gmail.com**
+
+Include as much detail as possible:
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+
+You will receive a response within 72 hours. Once the issue is confirmed and a fix is ready, a security advisory will be published and the fix will be released.

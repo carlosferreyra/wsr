@@ -6,3 +6,4 @@
 - Initialize cargo-dist with GitHub Actions release workflow
 - Add MIT license
 - Add package metadata (description, license) to Cargo.toml
+- Add git-cliff and cargo-release config with CHANGELOG
