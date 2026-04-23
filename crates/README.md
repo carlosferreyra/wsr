@@ -66,18 +66,18 @@ This directory contains all crates that make up the wsr workspace.
 
 ```
 wsr  (src/bin/wsr.rs → src/commands/)
-  ├── wsr-cli  (Cli struct, all clap arg types)
+  ├── wsr-cli ─────────────────── wsr-types
   ├── wsr-engine
-  │     ├── wsr-expr
+  │     ├── wsr-expr ──────────── wsr-types
   │     ├── wsr-resolver
-  │     │     ├── wsr-client
-  │     │     ├── wsr-cache ──── wsr-fs
-  │     │     └── wsr-gha ────── wsr-expr
-  │     ├── wsr-sandbox ──────── wsr-cache
-  │     ├── wsr-wasix ─────────── wsr-cache
-  │     ├── wsr-shell
-  │     └── wsr-types  (all crates depend on this)
-  ├── wsr-git ──────────────────── wsr-fs
+  │     │     ├── wsr-client ──── wsr-types
+  │     │     ├── wsr-cache ────── wsr-fs ── wsr-types
+  │     │     └── wsr-gha ──────── wsr-expr
+  │     ├── wsr-sandbox ─────────── wsr-cache
+  │     ├── wsr-wasix ──────────── wsr-cache
+  │     ├── wsr-shell ──────────── wsr-types
+  │     └── wsr-types  ◄── foundation: no internal deps
+  ├── wsr-git ─────────────────── wsr-fs
   └── wsr-tracing
 ```
 
