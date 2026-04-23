@@ -477,6 +477,7 @@ version = "0.0.2"
 dependencies = [
  "anyhow",
  "clap",
+ "wsr-cli",
  "wsr-engine",
  "wsr-git",
  "wsr-tracing",
@@ -497,6 +498,16 @@ version = "0.0.2"
 dependencies = [
  "anyhow",
  "wsr-fs",
+ "wsr-types",
+]
+
+[[package]]
+name = "wsr-cli"
+version = "0.0.2"
+dependencies = [
+ "anyhow",
+ "clap",
+ "serde",
  "wsr-types",
 ]
 

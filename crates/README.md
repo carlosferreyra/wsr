@@ -8,7 +8,8 @@ This directory contains all crates that make up the wsr workspace.
 
 | Crate | Description |
 |---|---|
-| [`wsr`](wsr/) | Binary entry point (`wsr`). Parses CLI arguments with clap v4 and delegates to `wsr-engine`, `wsr-git`, and `wsr-tracing`. Binary delivered from `src/bin/wsr.rs`. Published to crates.io as `wsr`. |
+| [`wsr`](wsr/) | Binary entry point. Contains `src/bin/wsr.rs` (thin `main`), `src/lib.rs`, and `src/commands/` (one file per subcommand). Bridges parsed CLI args from `wsr-cli` to the engine, git, and tracing crates. Published to crates.io as `wsr`. |
+| [`wsr-cli`](wsr-cli/) | All clap-specific code: `Cli` struct, every subcommand enum, and all argument types. A library — no `main`, no side effects. Lets shell-completion generators and test harnesses import the CLI schema without the full binary dep graph. |
 
 ---
 
@@ -64,7 +65,8 @@ This directory contains all crates that make up the wsr workspace.
 ## Dependency graph
 
 ```
-wsr  (src/bin/wsr.rs)
+wsr  (src/bin/wsr.rs → src/commands/)
+  ├── wsr-cli  (Cli struct, all clap arg types)
   ├── wsr-engine
   │     ├── wsr-expr
   │     ├── wsr-resolver

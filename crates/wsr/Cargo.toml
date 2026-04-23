@@ -15,8 +15,9 @@ name = "wsr"
 path = "src/bin/wsr.rs"
 
 [dependencies]
-anyhow.workspace    = true
-clap.workspace      = true
+anyhow.workspace      = true
+clap.workspace        = true
+wsr-cli.workspace     = true
 wsr-engine.workspace  = true
 wsr-git.workspace     = true
 wsr-tracing.workspace = true

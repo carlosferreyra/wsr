@@ -4,6 +4,7 @@ members  = [
     "crates/wsr",
     "crates/wsr-bench",
     "crates/wsr-cache",
+    "crates/wsr-cli",
     "crates/wsr-client",
     "crates/wsr-engine",
     "crates/wsr-expr",
@@ -32,6 +33,7 @@ categories  = ["development-tools", "command-line-utilities"]
 # Internal crates
 wsr-bench    = { path = "crates/wsr-bench" }
 wsr-cache    = { path = "crates/wsr-cache" }
+wsr-cli      = { path = "crates/wsr-cli" }
 wsr-client   = { path = "crates/wsr-client" }
 wsr-engine   = { path = "crates/wsr-engine" }
 wsr-expr     = { path = "crates/wsr-expr" }
