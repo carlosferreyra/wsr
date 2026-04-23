@@ -1,9 +1,9 @@
 [workspace]
 resolver = "2"
 members  = [
+    "crates/wsr",
     "crates/wsr-bench",
     "crates/wsr-cache",
-    "crates/wsr-cli",
     "crates/wsr-client",
     "crates/wsr-engine",
     "crates/wsr-expr",

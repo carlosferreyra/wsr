@@ -156,7 +156,7 @@ of each crate and how they relate.
 
 ```
 crates/
-  wsr-cli        # binary — entry point, subcommands
+  wsr            # binary — src/bin/wsr.rs, all subcommands
   wsr-engine     # job DAG scheduler and step orchestrator
   wsr-sandbox    # Tier 1 — Wasmtime + WASI Preview 3
   wsr-wasix      # Tier 2 — Wasmer + WASIX (transitional)

@@ -8,7 +8,7 @@ This directory contains all crates that make up the wsr workspace.
 
 | Crate | Description |
 |---|---|
-| [`wsr-cli`](wsr-cli/) | Binary entry point (`wsr`). Parses CLI arguments with clap v4 and delegates to `wsr-engine`, `wsr-git`, and `wsr-tracing`. Published to crates.io as `wsr`. |
+| [`wsr`](wsr/) | Binary entry point (`wsr`). Parses CLI arguments with clap v4 and delegates to `wsr-engine`, `wsr-git`, and `wsr-tracing`. Binary delivered from `src/bin/wsr.rs`. Published to crates.io as `wsr`. |
 
 ---
 
@@ -64,7 +64,7 @@ This directory contains all crates that make up the wsr workspace.
 ## Dependency graph
 
 ```
-wsr-cli
+wsr  (src/bin/wsr.rs)
   ├── wsr-engine
   │     ├── wsr-expr
   │     ├── wsr-resolver
